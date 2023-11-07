@@ -41,7 +41,7 @@ opt-einsum
 packaging
 Pillow
 pooch
-protobuf
+protobuf==3.20.3
 pyasn1
 pyasn1-modules
 pycparser
