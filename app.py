@@ -132,7 +132,7 @@ def predict():
         S_dB_resized = np.repeat(S_dB_resized[..., np.newaxis], 3, -1)
         features = np.expand_dims(S_dB_resized, axis=0)
 
-        model = load_model('/home/yash20100/BreaTHE/models/custom_model.h5')
+        model = load_model('models/custom_model.h5')
         test_pred = model.predict(features)
         class_pred = classes[np.argmax(test_pred)]
         confidence = test_pred.max()
